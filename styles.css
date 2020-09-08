@@ -1,0 +1,59 @@
+body {
+    background-color: cadetblue;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.125rem;
+}
+
+#board {
+    text-align: center;
+    padding: 3rem;
+    }
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color:burlywood;
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+.row {
+    clear: both;
+    margin:0 auto;
+    width: 302px;
+    }
+
+.Top {
+    border-bottom: 1px black solid;
+}
+
+.bottom  {
+    border-top: 1px black solid;
+}
+
+.left { 
+    border-right: 1px black solid;
+}
+
+.right {
+    border-left: 1px black solid;
+}
+
+.row > .square {
+    width: 100px;
+    height: 100px;
+    float:left
+}
+    
+
+
+
+
+
+
+ 
