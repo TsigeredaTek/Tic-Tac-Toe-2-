@@ -19,7 +19,7 @@ h1 {
 .square {
     width: 100px;
     height: 100px;
-    background-color:burlywood;
+    background-color:white;
 }
 
 .square:hover {
@@ -77,6 +77,8 @@ h1 {
 #squareH {
      border-bottom-left-radius: 0.25rem;
 }
-
+#restartButton {
+    
+}
 
 
