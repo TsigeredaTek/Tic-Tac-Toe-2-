@@ -1,4 +1,5 @@
 const cells = document.querySelectorAll(".row > div");
+const restartButton = document.getElementById("restart-button")
 const winningCombos = [
     [cells[0], cells[1], cells[2]],
     [cells[3], cells[4], cells[5]],
@@ -16,7 +17,7 @@ let turnCount = 0;
 cells.forEach(function (cell) {
     cell.addEventListener("click", function (event) {
         event.target.textContent = activePlayer;
-        
+
         turnCount++;
         checkWin();
         if (activePlayer === "X") {
@@ -42,8 +43,10 @@ function checkWin() {
 
         if (XCount === 3) {
             alert("X Wins");
+            restartButton.style.display = "block";
         } else if (OCount === 3) {
             alert("0 Wins");
+            restartButton.style.display = "block";
         } else if (turnCount === 9) {
             alert("Draw");
         }
@@ -51,6 +54,17 @@ function checkWin() {
     }
 
 }
+
+function restartGame() {
+    turnCount = 0;
+    activePlayer = "X";
+
+    cells.forEach(function (cell) {
+        cell.textContent = "";
+    });
+}
+
+
 
 
 
